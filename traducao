@@ -1,0 +1,13 @@
+tradução(uno, um).
+tradução(due, dois).
+tradução(tre, tres).
+tradução(quattro, quatro).
+tradução(cinque, cinco).
+tradução(sei, seis).
+tradução(sete, sete).
+tradução(otto,oito).
+tradução(nove, nove).
+
+traduz_lista([],[_]).%traduzindo a cabeça da lista (CASO BASE)
+traduz_lista(X,[X,_]).
+			
