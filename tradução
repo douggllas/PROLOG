@@ -1,0 +1,14 @@
+tradução(uno, um).
+tradução(due, dois).
+tradução(tre, três).
+tradução(quattro, quatro).
+tradução(cinque, cinco).
+tradução(sei, seis).
+tradução(sette,sete).
+tradução(otto,oito).
+tradução(nove, nove).
+
+traduccione([],[]).
+traduccione([I|Is],[P|Ps]):-
+    		tradução(I,P),
+    		traduccione(Is,Ps).
