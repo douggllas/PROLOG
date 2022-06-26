@@ -1,0 +1,17 @@
+sobre(base,mesa).
+sobre(caneca, mesa).
+sobre(vidro,mesa).
+sobre(elefante,base).
+sobre(novelo,elefante).
+sobre(sorvete,novelo).
+sobre(maçã,sorvete).
+sobre(hipopotamo1,maçã).
+sobre(hipopotamo2,hipopotamo1).
+sobre(cupcake,hipopotamo2).
+sobre(lapis,vidro).
+
+acima(X,Y):-sobre(X,Y).
+acima(X,Y):-sobre(X,A),acima(A,Y).
+
+abaixo(X,Y):-acima(Y,X).
+abaixo(X,Y):-acima(A,Y),abaixo(A,X).
