@@ -1,0 +1,3 @@
+tresVez([],[]).
+tresVez([H|Hs],[H,H,H|Ys]):-
+    	tresVez(Hs,Ys).
